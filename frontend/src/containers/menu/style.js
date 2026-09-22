@@ -434,7 +434,7 @@ export const MenuStyled = styled.div`
         letter-spacing: 0.2px;
     }
 
-    .results p strong, i {
+    .results p strong, .results i {
         color: #00d9ff;
         font-weight: 600;
     }
