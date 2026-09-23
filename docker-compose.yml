@@ -1,6 +1,7 @@
 services:
   backend:
     build: ./backend
+    image: natep20/skylo-backend:latest
     env_file:
       - ./backend/.env
     expose:
@@ -9,6 +10,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: natep20/skylo-frontend:latest
     ports:
       - "8080:80"
     depends_on:
