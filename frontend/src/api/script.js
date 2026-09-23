@@ -23,7 +23,7 @@ export async function getWeatherByCity(event) {
     let weatherData;
 
     try {
-        const res = await fetch('/api/weather', {
+        const res = await fetch('http://localhost:3000/api/weather', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({ city: input.value})
@@ -53,7 +53,7 @@ export async function getWeatherByCity(event) {
     result.style.display = 'flex';
 
     try {
-        const GeminiRes = await fetch('/api/gemini', {
+        const GeminiRes = await fetch('http://localhost:3000/api/gemini', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
